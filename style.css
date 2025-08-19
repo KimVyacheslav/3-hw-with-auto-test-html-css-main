@@ -36,12 +36,11 @@ header span {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .main-section .wrapper {
     /* 📍 Свойствa flexbox для размещения блока с текстом и изображения в ряд, и центрирования их по вертикали */
-display: flex;
+    display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -49,7 +48,7 @@ display: flex;
 
 .text-wrapper {
     /* 📍 Cвойство для ограничения ширины блока с текстом в первой секции */
-max-width: 425px;
+    max-width: 425px;
 }
 
 .main-title {
@@ -74,6 +73,10 @@ max-width: 425px;
 
 .about-section .wrapper {
     /* 📍 Свойствa flexbox для отступов между элементами select, .info-wrapper и .skills-wrapper  */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 60px;
 }
 
 select {
@@ -83,7 +86,7 @@ select {
     padding: 8px 12px;
     font-weight: 400;
     font-size: 16px;
-    appearance: none; 
+    appearance: none;
     background-image: url("./ep_arrow-down.svg");
     background-repeat: no-repeat;
     background-position: right 12px top 50%;
@@ -97,6 +100,7 @@ select:hover,
 
 .info-wrapper {
     /* 📍 Свойство flexbox для расположения 2-х списков в ряд */
+    display: flex;
 }
 
 .section-title {
@@ -113,6 +117,9 @@ select:hover,
 .frameworks-list,
 .books-list {
     /* 📍 Свойства flexbox для отступов между элементами в списках */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .frameworks-list {
@@ -124,21 +131,27 @@ select:hover,
 
 .skills-block {
     /* 📍 Свойства flexbox для расположения формы над элементами с классом .label */
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .skills {
     /* 📍 Свойства flexbox для расположения элементов с классом .label */
+    min-width: 50%;
 }
 
 .books-list {
     font-weight: 400;
     font-size: 16px;
     padding-left: 20px;
+    min-width: 50%;
 }
 
 .label {
     font-weight: 400;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
 }
 
 form {
@@ -181,7 +194,7 @@ table {
     border-collapse: collapse;
     font-weight: 400;
     font-size: 14px;
-    margin: 0 auto;
+    margin: 60px 570px 100px 570px;
 }
 
 th, td {
