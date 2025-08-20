@@ -9,7 +9,7 @@
     margin: 0 auto;
     width: 100%;
     /* 📍 Максимальная ширина для контейнера */
-    max-width: 1440px;
+    max-width: 1140px;
 }
 
 body {
@@ -36,6 +36,7 @@ header span {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .main-section .wrapper {
@@ -206,7 +207,7 @@ table {
     border-collapse: collapse;
     font-weight: 400;
     font-size: 14px;
-    margin: 60px 570px 100px 570px;
+    margin: 60px 420px 100px 420px;
 }
 
 th, td {
